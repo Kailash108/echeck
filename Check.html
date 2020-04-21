@@ -1,0 +1,557 @@
+<html>
+    <head>
+        <title>Welcome To COVID-19 e-Checker</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-color: skyblue;">
+            <div class="container-fluid;w3-container w3-center w3-animate-zoom" style="background-color:indigo;color: gold;font-size: 30px;font-family: Times New Roman;">
+                <center>COVID-19 e-Checker</center>
+            </div><br>
+            <div class="container" style="float: left;">
+                <div class="row;w3-container w3-center w3-animate-opacity">
+                    <div align="center" class="col" id="welcome" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                </div>
+            </div>
+            <br><br><br>
+            <button class="w3-container w3-center w3-animate-opacity" id="start" onclick="style.display = 'none'; start1()"></button>
+            <!---------------------------------------------------------------------------------------------------------------------------------------------->
+            <div align="right">
+                <p id="conf" style="background-color: palegreen;width:max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!---------------------------------------------------------------------------------------------------------------------------------------------->
+            <div id="q1" style="background-color:palegoldenrod;color:black;width:max-content;height: max-content;font-size: 20px;border-radius: 10px;"></div>
+            <button id="1" onclick="myfunc()" style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+            <button id="2" onclick="myfunc1()" style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+            <button id="3" onclick="myfunc2()" style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline;"></button>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div align="right">
+                <p id="ans1" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div style="float:left;width:fit-content;" class="container">
+               <div class="row">
+                    <div class="col" id="a1" style="float: left;background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br>
+            <div style="float:left;width:fit-content;position: relative;top: 0.5cm;" class="container">
+                <div class="row">
+                    <div class="col" id="a2" style="float: left;background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+             <div style="float:left;width:fit-content;position: relative;top: 1cm;" class="container">
+                <div class="row">
+                    <div class="col" id="a3" style="float: left;background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+             <div style="float:left;width:fit-content;position: relative;top: 1.5cm;" class="container">
+                <div class="row">
+                    <div class="col" id="a4" style="float: left;background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+            <!------------------------------------------------------------------------------------------------------------------------------------------------>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div id="div1" style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q1" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br><br><br>
+
+             <button id="i1" onclick="r1()"  style="background-color: skyblue;color: black;border: skyblue;text-decoration: underline"></button><br>
+             <button id="i2" onclick="ri1()"  style="background-color: skyblue;color: black;border: skyblue;text-decoration: underline"></button><br>
+            
+             <div align="right">
+                <p id="r1" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+             <!----------------------------------------------------------------------------------------------------------------------------------------------->
+             <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div id="div2" style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q2" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+    
+             <br><br>
+    
+             <button id="i3" onclick="r2()" style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i4" onclick="ri2()" style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+           
+             <div align="right">
+                <p id="r2" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div id="div3" style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q3" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br>
+           
+             <button id="i5" onclick="r3()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i6" onclick="ri3()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+      
+             <div align="right">
+                <p id="r3" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q4" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br>
+           
+             <button id="i7" onclick="r4()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i8" onclick="ri4()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+      
+             <div align="right">
+                <p id="r4" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q5" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br>
+           
+             <button id="i9" onclick="r5()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i10" onclick="ri5()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+      
+             <div align="right">
+                <p id="r5" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q6" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br><br><br>
+           
+             <button id="i11" onclick="r6()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i12" onclick="ri6()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+      
+             <div align="right">
+                <p id="r6" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q7" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br>
+           
+             <button id="i13" onclick="r7()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i14" onclick="ri7()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+      
+             <div align="right">
+                <p id="r7" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q8" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br>
+           
+             <button id="i15" onclick="r8()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i16" onclick="ri8()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+      
+             <div align="right">
+                <p id="r8" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q9" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br>
+           
+             <button id="i17" onclick="r9()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i18" onclick="ri9()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+      
+             <div align="right">
+                <p id="r9" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div style="float: left;width: auto;" class="container">
+                <div class="row">
+                     <div class="col" id="Q10" style="background-color:palegoldenrod;color:black;height: max-content;font-size: 20px;border-radius: 20px;"></div>
+                 </div>
+             </div>
+          
+             <br><br>
+           
+             <button id="i19" onclick="r10()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+             <button id="i20" onclick="ri10()"  style="background-color: skyblue;color: black;border: 0cm;text-decoration: underline"></button><br>
+      
+             <div align="right">
+                <p id="r10" style="background-color: palegreen;width:max-content;height: max-content;border-radius: 5px;font-size: 20px;"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->
+            <button onclick="result()" id="count" style="border: skyblue;"></button><br><br>
+            <div><p align="center" id="result" style="font-size: 30px;font-family: Times New Roman;border: skyblue;border-radius: 15px;"></p></div>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------->   
+            <script>
+
+            </script>
+            
+            <script>
+            var count = 1;
+            document.getElementById("welcome").innerHTML = "Hello<br>COVID-19 e-Checker Welcomes You On Web";
+            document.getElementById("start").innerHTML = "Click Me, So That I Can Tell You What I Know";
+            function start1()
+            {
+                document.getElementById("conf").innerHTML = "Start";
+                document.getElementById("q1").innerHTML = "Select Any One";
+                document.getElementById("1").innerHTML = "Precautionary Measures";
+                document.getElementById("2").innerHTML = "I was tested, Now what?";
+                document.getElementById("3").innerHTML = "e-Checker";
+            }
+            function myfunc()
+                {
+                    if(i = 1)
+                    {
+                        document.getElementById(i).style.display = "none";
+                        document.getElementById("ans1").innerHTML = "Measures";
+                        document.getElementById(i+1).style.display = "none";
+                        document.getElementById(i+2).style.display = "none"
+                        document.getElementById("a1").innerHTML = "•Please stay at home except to received medical care. Do not go to work or public areas,<br> and avoid using public transportation.<br>•Clean and disinfect surfaces that you touch and keep others from touching those surfaces.<br>Drink plenty of fluids and rest.<br>•Avoid touching your eyes, nose, and mouth with unwashed hands.<br>•Cover your cough or sneeze with tissue and throw it in the trash<br>•Wash your hands afterwards.<br>";
+                        document.getElementById("a2").innerHTML = "•COVID-19 can affect people who have weaker immune systems from things like<br>chemotherapy, HIV/AIDS, organ transplant, being pregnant, or prolonged steroid use.<br>•You should wear a cloth face covering, over your nose and mouth if you must be <br>around other people or animals, including pets (even at home)."
+                        document.getElementById("a3").innerHTML = "•Try to isolate yourself at home and stay away from others for atleast during this lockdown period.<br>•Try to keep at least 6 feet (1.8 m) away from other people."
+                        document.getElementById("a4").innerHTML = "If you want to start COVID-19 e-checker, refresh this page and click the 3rd button"
+                    }
+                }
+            function myfunc1()
+            {
+                if (i = 2)
+                        {
+                            document.getElementById(i).style.display = "none";
+                            document.getElementById("ans1").innerHTML = "Tested";
+                            document.getElementById(i-1).style.display = "none";
+                            document.getElementById("a1").innerHTML = "•Due to limited laboratory supplies, COVID-19 tests are being prioritized for greatest need.<br>•It may take 2-5 days for your test to be completed. <br>•While waiting for the results, you need to stay home and away from public places. <br>•You should also try to stay in a single room in your home and away from others living with you.<br>•Dial 102 or Contact your nearest hospital services";
+                            document.getElementById("a2").innerHTML = "•There's nothing more which I can tell. Please, consult your known doctor for better treatment and for providing<br>you the information about the best doctors<br>•Don't lose Your Hope. It'll get Cured<br>•80% Of The People Are Getting Cured.Hope, You'll Be One In Them.<br>"
+                            document.getElementById(i+1).style.display = "none";                         
+                        }
+            }
+            function myfunc2()
+                {
+                    if(i = 3)
+                    {  
+                        document.getElementById(i).style.display = "none";
+                        document.getElementById("ans1").innerHTML = "Checker";
+                        document.getElementById(i-1).style.display = "none";
+                        document.getElementById(i-2).style.display = "none";     
+
+                        document.getElementById("Q1").innerHTML = "<p align='center' style=\'text-decoration: underline'\>Answer The Following Questions...<p>Have you recently traveled to an area of high-risk for COVID-19?";
+                        var x = document.getElementById("i1").innerHTML = "YES";
+                        x = document.getElementById("i2").innerHTML = "NO";
+                        
+                        document.getElementById("Q2").innerHTML = "Have you been around someone who is known to have the Coronavirus (COVID-19)?";
+                        var x1 = document.getElementById("i3").innerHTML = "YES";
+                        x1 = document.getElementById("i4").innerHTML = "NO";
+
+                        document.getElementById("Q3").innerHTML = "Have you been told by a health official that you may have been exposed to the virus?";
+                        var x2 = document.getElementById("i5").innerHTML = "YES";
+                        x2 = document.getElementById("i6").innerHTML = "NO";
+
+                        document.getElementById("Q4").innerHTML = "Have you had a fever recently? Or do you think you have a fever?";
+                        var x3 = document.getElementById("i7").innerHTML = "YES";
+                        x3 = document.getElementById("i8").innerHTML = "NO";
+
+                        document.getElementById("Q5").innerHTML = "Do you have a cough?";
+                        var x4 = document.getElementById("i9").innerHTML = "YES";
+                        x4 = document.getElementById("i10").innerHTML = "NO";
+
+                        document.getElementById("Q6").innerHTML = "Do you have any of these?<br>• Fatigue<br>• Body aches";
+                        var x5 = document.getElementById("i11").innerHTML = "YES";
+                        x5 = document.getElementById("i12").innerHTML = "NO";
+
+                        document.getElementById("Q7").innerHTML = "Do you have a sore throat?";
+                        var x6 = document.getElementById("i13").innerHTML = "YES";
+                        x6 = document.getElementById("i14").innerHTML = "NO";
+
+                        document.getElementById("Q8").innerHTML = "Do you have a reduced sense of smell or taste?";
+                        var x7 = document.getElementById("i15").innerHTML = "YES";
+                        x7 = document.getElementById("i16").innerHTML = "NO";
+
+                        document.getElementById("Q9").innerHTML = "Are you feeling mild to moderate difficulty breathing?";
+                        var x8 = document.getElementById("i17").innerHTML = "YES";
+                        x8 = document.getElementById("i18").innerHTML = "NO";
+
+                        document.getElementById("Q10").innerHTML = "Are you feeling severe cold??";
+                        var x9 = document.getElementById("i19").innerHTML = "YES";
+                        x9 = document.getElementById("i20").innerHTML = "NO";                        
+                    }
+                }
+                //Functions for buttons starts from here
+                function r1()
+                {
+                        if(x = "YES")
+                        {
+                            document.getElementById("r1").innerHTML = "YES";
+                            document.getElementById("i1").style.display = "none";
+                            count++;
+                            document.getElementById("i2").style.display = "none";
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri1()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r1").innerHTML = "NO";
+                        document.getElementById("i1").style.display = "none"
+                        document.getElementById("i2").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r2()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r2").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i3").style.display = "none"
+                            document.getElementById("i4").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri2()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r2").innerHTML = "NO";
+                        document.getElementById("i3").style.display = "none"
+                        document.getElementById("i4").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r3()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r3").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i5").style.display = "none"
+                            document.getElementById("i6").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri3()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r3").innerHTML = "NO";
+                        document.getElementById("i5").style.display = "none"
+                        document.getElementById("i6").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r4()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r4").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i7").style.display = "none"
+                            document.getElementById("i8").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri4()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r4").innerHTML = "NO";
+                        document.getElementById("i7").style.display = "none"
+                        document.getElementById("i8").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r5()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r5").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i9").style.display = "none"
+                            document.getElementById("i10").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri5()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r5").innerHTML = "NO";
+                        document.getElementById("i9").style.display = "none"
+                        document.getElementById("i10").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r6()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r6").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i11").style.display = "none"
+                            document.getElementById("i12").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri6()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r6").innerHTML = "NO";
+                        document.getElementById("i11").style.display = "none"
+                        document.getElementById("i12").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r7()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r7").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i13").style.display = "none"
+                            document.getElementById("i14").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri7()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r7").innerHTML = "NO";
+                        document.getElementById("i13").style.display = "none"
+                        document.getElementById("i14").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r8()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r8").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i15").style.display = "none"
+                            document.getElementById("i16").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri8()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r8").innerHTML = "NO";
+                        document.getElementById("i15").style.display = "none"
+                        document.getElementById("i16").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r9()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r9").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i17").style.display = "none"
+                            document.getElementById("i18").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri9()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r9").innerHTML = "NO";
+                        document.getElementById("i17").style.display = "none"
+                        document.getElementById("i18").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function r10()
+                {
+                    if(x1 = "YES")
+                        {
+                            document.getElementById("r10").innerHTML = "YES";
+                            count++;
+                            document.getElementById("i19").style.display = "none"
+                            document.getElementById("i20").style.display = "none"
+                            document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                        }
+                }
+                function ri10()
+                {
+                    if(x = "NO")
+                    {
+                        document.getElementById("r10").innerHTML = "NO";
+                        document.getElementById("i19").style.display = "none"
+                        document.getElementById("i20").style.display = "none"
+                        document.getElementById("count").innerHTML = "After Answering All The Questions<br>Click Here";
+                    }
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------------------
+                function result()
+                {
+                    if(count == '6' || count == '5')
+                    {
+                        document.getElementById("result").innerHTML = "You Have Found With Some Symptoms. So Please Be<br>Cautions. Don't Go Out. Eat Healthy Food. Take Rest";
+                        document.getElementById("result").style.backgroundColor = "yellow";
+                        document.getElementById("result").style.border = "solid";
+                    }
+                    else if(count < '5')
+                    {
+                        document.getElementById("result").innerHTML = "SUPERB<br>Your COVID-19 rate is low. Keep It Up & Stay Home ";
+                        document.getElementById("result").style.backgroundColor = "springgreen";
+                        document.getElementById("result").style.border = "solid";
+                        
+                        document.getElementById("result1").innerHTML = "SUPERB<br>Your COVID-19 rate is low. Keep It Up & Stay Home ";
+                        document.getElementById("result1").style.backgroundColor = "springgreen";
+                        document.getElementById("result1").style.border = "solid";
+                    }
+                    else if(count > '8')
+                    {
+                        document.getElementById("result").innerHTML = "Your COVID-19 rate is high <br> Please Contact your local hospital services <br> OR <br> Call 102";
+                        document.getElementById("result").style.backgroundColor = "red";
+                        document.getElementById("result").style.color = "white"
+                        document.getElementById("result").style.border = "solid black";
+                    }
+                }
+        </script>
+    </body>
+</html>
